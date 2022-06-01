@@ -1,0 +1,10 @@
+Opstarten Testwebsite
+sudo docker run -p 8080:80 -d --rm --name apa01 -v /home/karelh/testsite:/var/www/html  dockerkarelh/kdhapaserv-dev22
+
+Opstarten REST01
+sudo docker run -p 5051:5001 -d --rm --name rest01 -v /home/karelh/rest01:/restservice dockerkarelh/kdh-restserv-dev
+
+
+Opstarten REST02
+sudo docker run -p 5052:5002 -d --rm --name rest02 -v /home/karelh/rest02:/restservice dockerkarelh/kdh-restserv-dev
+
